@@ -1,5 +1,3 @@
-CPPStudyAndPractice
-===================
+## About
 
-Code with C++ in order to master it
-This is not a general project,it just a practice examples.
+This repository is not a real project, it just a learn and practice project for learning and practic C/C++. It also contains some useful "wheel" for C++ development.
