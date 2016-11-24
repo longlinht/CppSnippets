@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <sstream>
+#include <string.h>
 
 /*
  *Why is processing a sorted array faster than an unsorted array?
@@ -105,6 +106,7 @@ void mergeVector(std::vector<T>& a, const std::vector<T> &b)
 }
 
 //Most effective way for float and double comparison
+/*
 template<class T>
 typename std::enable_if<!std::numeric_limits<T>::is_integer, bool>::type
 almost_equal(T x, T y, int ulp)
@@ -115,6 +117,7 @@ almost_equal(T x, T y, int ulp)
 		// unless the result is subnormal
 		|| std::abs(x - y) < std::numeric_limits<T>::min();
 }
+*/
 
 //Implement an algorithm to determine if a string has all unique characters. What if you can not use additional data structures?
 bool charactersUnique(const char* s);

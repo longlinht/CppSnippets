@@ -1,16 +1,15 @@
 #include "simplestring.h"
 #include "interview.h"
 #include "singleton.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include "stdio.h"
 
 using namespace std;
 using namespace simplestd;
 
-
-#include <stdio.h>
-#include <string.h>
-
-#include "stdio.h"
-char* humpDel1(const char* src, char* des)//只删除中间的
+char* humpDel1(const char* src, char* des)
 {
 	int i, j;
 	for (i = 1, j = 1, des[0] = src[0]; src[i + 1] != 0; i++)
@@ -22,7 +21,7 @@ char* humpDel1(const char* src, char* des)//只删除中间的
 	des[j] = 0;
 	return des;
 }
-char* humpDel3(const char* src, char* des)//3个都删除
+char* humpDel3(const char* src, char* des)
 {
 	int i = 0, j = 0, flen = 0;
 	char* flag;
@@ -58,7 +57,6 @@ int main()
 	humpDel3(a, b);
 	printf("src=%s\n", a);
 	printf("des=%s\n", b);
-	system("pause");
 }
 
 /*

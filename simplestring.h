@@ -9,7 +9,7 @@
 #define SIMPLESTRING_H
 
 
-#include <string>
+#include <string.h>
 #include <iostream>
 
 
