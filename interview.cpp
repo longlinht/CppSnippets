@@ -553,3 +553,39 @@ void humpDel(const char* src , int n, char* dst)
 		}
 	}
 }
+
+void removeDuplicates(char* s) 
+{
+    int len = strlen(s);
+    if(len < 2) return;
+
+    int p=0;
+    for(int i=0; i<len; i++) {
+        if(s[i] != '\0') {
+            s[p++] = s[i];
+            for(int j=i+1; j<len; j++) {
+                if(s[j] == s[i]) {
+                    s[j] = '\0';
+                }
+            }
+        }
+    }
+    s[p] = '\0';
+}
+
+void removeDuplicatesWithDataStructure(char* s) {
+    int len = strlen(s);
+    if(len < 2) return;
+
+    bool a[256];
+    memset(a, 0, sizeof(a));
+    int p = 0;
+
+    for(int i=0; i<len; i++) {
+        if(!a[s[i]]) {
+            s[p++] = s[i];
+            a[s[i]] = true;
+        }
+    }
+    a[p] = '\0';
+}

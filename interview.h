@@ -137,7 +137,13 @@ void bubbleSort(int a[], int n);
 //Quick sort.
 void quickSort(int a[], int left, int right);
 
-//memory move implementation.
+//Memory move implementation.
 void* myMemMove(void* dst, const void* src, const int n);
+
+//Remove duplicated character in a string without additional data structure.
+void removeDuplicates(char* s);
+
+//Remove duplicated character in a string with additional data structure.
+void removeDuplicatesWithDataStructure(char* s);
 
 #endif // INTERVIEW_H
