@@ -436,6 +436,17 @@ bool anagrams(const char* a, const char* b)
 	return true;
 }
 
+bool anagramsWithSTL(std::string& a, std::string& b) {
+    if(a == "" || b == "") 
+        return false;
+
+    if(a.length() != b.length())
+        return false;
+
+    std::sort(&a[0], &a[0] + a.length());
+    std::sort(&b[0], &b[0] + b.length());
+}
+
 void bubbleSort(int a[], int n)
 {
 	assert(a != NULL);
@@ -443,10 +454,10 @@ void bubbleSort(int a[], int n)
 
 	for (int i = 0; i < n - 1; i++) 	
 	{
-		for (int j = 0; j < n - i; j++) //从第1位开始比较直到最后一个尚未归位的数，想一想为什么到n - i就可以了。
+		for (int j = 0; j < n - i; j++) 
 		{
 			if (j == n-1) continue;
-			if (a[j] < a[j + 1]) //比较大小并交换
+			if (a[j] < a[j + 1]) 
 			{
 				int t = a[j]; 
 				a[j] = a[j + 1]; 

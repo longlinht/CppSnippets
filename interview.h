@@ -128,6 +128,9 @@ void reverseCStr(char* s);
 //Write a method to decide if two strings are anagrams or not.
 bool anagrams(const char* a, const char* b);
 
+//Write a method to decide if two strings are anagrams with STL.
+bool anagramsWithSTL(std::string& a, std::string& b);
+
 //Write a method to delete hump character series in a string.
 void humpDel(char* src, int n);
 

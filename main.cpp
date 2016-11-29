@@ -52,7 +52,7 @@ char* humpDel3(const char* src, char* des)
 int main()
 {
 	//char a[] = { "aabababbABaaacAcAcBCdCdCa" };
-	char a[] = { "abc  iccc" };
+	char a[] = { "aoelelodworld" };
 
 	printf("orig=%s\n", a);
     removeDuplicates(a);
