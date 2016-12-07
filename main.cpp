@@ -53,10 +53,16 @@ int main()
 {
 	//char a[] = { "aabababbABaaacAcAcBCdCdCa" };
 	char a[] = { "aoelelodworld" };
+    std::string s = "abc d e f";
+    std::string d;
+    replaceSpaces(s, d);
+    std::cout<<d<<std::endl;
+    s.append("a");
 
 	printf("orig=%s\n", a);
     removeDuplicates(a);
 	printf("now=%s\n", a);
+    
 }
 
 /*

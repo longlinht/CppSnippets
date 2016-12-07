@@ -600,3 +600,18 @@ void removeDuplicatesWithDataStructure(char* s) {
     }
     a[p] = '\0';
 }
+
+void replaceSpaces(const std::string& s, std::string& d) {
+    StringVector v;
+    splitStringWithoutSTL(s, ' ', v);
+    for(StringVector::iterator it = v.begin(); it != v.end(); ++it) {
+        d.append(*it);
+        if( ++it != v.end()) {
+            d.append("%20");
+            std::cout<<d<<std::endl;
+            --it;
+        } else { 
+            --it;
+        }
+    }
+}

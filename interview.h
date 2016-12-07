@@ -149,4 +149,7 @@ void removeDuplicates(char* s);
 //Remove duplicated character in a string with additional data structure.
 void removeDuplicatesWithDataStructure(char* s);
 
+//Replace all spaces in a string with '20%'.
+void replaceSpaces(const std::string& s, std::string& d);
+
 #endif // INTERVIEW_H
