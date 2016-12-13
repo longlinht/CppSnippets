@@ -52,6 +52,7 @@ char* humpDel3(const char* src, char* des)
 int main()
 {
 	//char a[] = { "aabababbABaaacAcAcBCdCdCa" };
+    /*
 	char a[] = { "aoelelodworld" };
     std::string s = "abc d e f";
     std::string d;
@@ -62,7 +63,30 @@ int main()
 	printf("orig=%s\n", a);
     removeDuplicates(a);
 	printf("now=%s\n", a);
-    
+    */
+
+    int a[][4] = {
+        {1,2,3,4},
+        {5,6,7,8},
+        {9,10,11,12},
+        {13,14,15,16}
+    };
+
+    for(int i=0; i<4; i++){
+        for(int j=0; j<4; j++)
+            std::cout<<a[i][j]<<" ";
+        std::cout<<std::endl;
+    }
+
+    std::cout<<"Before transpose"<<std::endl;
+
+    transpose(a, 4);
+
+    for(int i=0; i<4; i++){
+        for(int j=0; j<4; j++)
+            std::cout<<a[i][j]<<" ";
+        std::cout<<std::endl;
+    }
 }
 
 /*

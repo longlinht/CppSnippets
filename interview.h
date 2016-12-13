@@ -152,4 +152,12 @@ void removeDuplicatesWithDataStructure(char* s);
 //Replace all spaces in a string with '20%'.
 void replaceSpaces(const std::string& s, std::string& d);
 
+//Swap two variables
+void swap(int& a, int& b);
+
+/*
+Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, write a method to rotate the image by 90 degrees. Can you do this in place?
+*/
+void transpose(int a[][4], int n);
+
 #endif // INTERVIEW_H
