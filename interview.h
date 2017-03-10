@@ -55,8 +55,17 @@ void reverse(char *b);
 //Reverse a string with two pointers;
 void reverseWithPtr(char* s);
 
+//Bubble sort.
+void bubbleSort(int a[], int n);
+
+//Select sort.
+void selectSort(int a[], int n);
+
 //Insert sort:worst case O(n^2)
 void insertSort(int arr[], size_t size);
+
+//Quick sort.
+void quickSort(int a[], int left, int right);
 
 //Merge sort:worst case O(nlogn)
 void merge_array(int *list1, int list1_size, int *list2, int list2_size);
@@ -70,8 +79,6 @@ void countASIICs(const char *s);
 
 //What is the name of the "-->" operator?
 void printNumbers();
-
-
 
 //Split string  elegently just use STL.
 StringVector& splitString(const std::string &s, char delim, StringVector &elems);
@@ -134,11 +141,7 @@ bool anagramsWithSTL(std::string& a, std::string& b);
 //Write a method to delete hump character series in a string.
 void humpDel(char* src, int n);
 
-//Bubble sort.
-void bubbleSort(int a[], int n);
 
-//Quick sort.
-void quickSort(int a[], int left, int right);
 
 //Memory move implementation.
 void* myMemMove(void* dst, const void* src, const int n);
@@ -159,5 +162,9 @@ void swap(int& a, int& b);
 Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, write a method to rotate the image by 90 degrees. Can you do this in place?
 */
 void transpose(int a[][4], int n);
+
+/*
+ Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column is set to 0.
+ */
 
 #endif // INTERVIEW_H

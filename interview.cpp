@@ -57,6 +57,24 @@ void reverseWithPtr(char* s)
 	}
 }
 
+void selectSort(int arr[], int size){
+    size_t minIndex;
+    for(size_t i=0; i < size; i++) {
+        minIndex = i;
+        for(size_t j=i+1; j < size; j++) {
+            if(arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+
+        if(minIndex != i) {
+            int temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
+        }
+    }
+}
+
 void insertSort(int arr[], size_t size){
 	size_t i, j;
 	int tmp;
