@@ -6,6 +6,12 @@
 #include <stdlib.h>
 #include "stdio.h"
 
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <algorithm>
+#include <iterator>
+
 using namespace std;
 using namespace simplestd;
 
@@ -49,10 +55,18 @@ char* humpDel3(const char* src, char* des)
 	return des;
 }
 
+/*
 int main()
 {
+    do
+    {
+        std::string sub;
+        iss >> sub;
+        if(!sub.empty())
+            std::cout << "Substring: " << sub << std::endl;
+    } while (iss);
+
 	//char a[] = { "aabababbABaaacAcAcBCdCdCa" };
-    /*
 	char a[] = { "aoelelodworld" };
     std::string s = "abc d e f";
     std::string d;
@@ -63,7 +77,6 @@ int main()
 	printf("orig=%s\n", a);
     removeDuplicates(a);
 	printf("now=%s\n", a);
-    */
 
     int a[][4] = {
         {1,2,3,4},
@@ -88,10 +101,11 @@ int main()
         std::cout<<std::endl;
     }
 }
+*/
 
-/*
 int main()
 {
+    /*
 	char buffer[80] = "aoelelod world";
 	for (int i = 0; buffer[i] != '\0'; i++){
 		if (buffer[i + 2] == '\0'){
@@ -112,6 +126,14 @@ int main()
 		}
 		printf("%c/n", buffer[i]);
 	}
-	return 0;
+    */
+
+    int n;
+    printf("Enter a positive integer: ");
+    scanf("%d",&n);
+
+    bool isMopPrime = (isMopNumber(n)) && (isPrimeNumber(n));
+    cout<<"is mop prime=" << isMopPrime<<endl;
+
+    return 0;
 }
-*/

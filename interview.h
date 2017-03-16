@@ -160,4 +160,10 @@ Given an image represented by an NxN matrix, where each pixel in the image is 4 
 */
 void transpose(int a[][4], int n);
 
+// Check a number is mop.
+bool isMopNumber(int);
+
+// Check a number is prime.
+bool isPrimeNumber(int);
+
 #endif // INTERVIEW_H

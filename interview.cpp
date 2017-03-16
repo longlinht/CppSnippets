@@ -58,7 +58,7 @@ void reverseWithPtr(char* s)
 }
 
 void insertSort(int arr[], size_t size){
-	size_t i, j;
+	int i, j;
 	int tmp;
 	for (i = 1; i < size; ++i){
 		tmp = arr[i];
@@ -445,6 +445,8 @@ bool anagramsWithSTL(std::string& a, std::string& b) {
 
     std::sort(&a[0], &a[0] + a.length());
     std::sort(&b[0], &b[0] + b.length());
+    
+    return a == b;
 }
 
 void bubbleSort(int a[], int n)
@@ -634,4 +636,21 @@ void transpose(int a[][4], int n) {
             swap(a[i][j], a[n-1-i][j]);
         }
     }
+}
+
+bool isMopNumber(int n) {
+    if(n<10) {
+        return n == 2;
+    } else {
+        return (n % 10 == 3) && isMopNumber(n/10);
+    }
+}
+
+bool isPrimeNumber(int n) {
+    for(int i=2; i < n/2; i++) {
+        if(n % i == 0) {
+            return false;
+        }
+    }
+    return true;
 }
