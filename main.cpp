@@ -100,7 +100,7 @@ int main()
             std::cout<<a[i][j]<<" ";
         std::cout<<std::endl;
     }
-    */
+
     int a[] = {4,9,10, 22, 1,8,5};
     std::cout<<"before sort"<<endl;
     for(int i=0; i < 7; i++) {
